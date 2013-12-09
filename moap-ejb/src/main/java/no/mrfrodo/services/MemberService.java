@@ -1,28 +1,10 @@
-
 package no.mrfrodo.services;
 
 import no.mrfrodo.model.Member;
 
-import javax.ejb.Stateless;
-import javax.enterprise.event.Event;
-import javax.inject.Inject;
-import javax.persistence.EntityManager;
-import java.util.logging.Logger;
+public interface MemberService {
 
-@Stateless
-public class MemberService {
+    public void saveNewMember(Member member) throws Exception;
 
-    @Inject
-    private Logger log;
-
-    @Inject
-    private EntityManager em;
-
-    @Inject
-    private Event<Member> memberEventSrc;
-
-    public void register(Member member) throws Exception {
-        em.persist(member);
-        memberEventSrc.fire(member);
-    }
+    public Member getMember(Long id) throws Exception;
 }

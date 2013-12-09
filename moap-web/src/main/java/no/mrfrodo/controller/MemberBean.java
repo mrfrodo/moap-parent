@@ -29,7 +29,6 @@ public class MemberBean {
         return newMember;
     }
 
-
     public String getName() {
         return name;
     }
@@ -40,18 +39,14 @@ public class MemberBean {
     public void save(ActionEvent actionEvent) {
         try {
             newMember.setName(name);
-            memberRegistration.register(newMember);
+            memberRegistration.saveNewMember(newMember);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         initNewMember();
-
-
         FacesContext context = FacesContext.getCurrentInstance();
-
         context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Registered!", "Registration successful"));
-
         context.addMessage(null, new FacesMessage("Successful", "Welcome new member " + name));
         context.addMessage(null, new FacesMessage("Second Message", "Additional Info Here..."));
     }
