@@ -1,0 +1,7 @@
+
+Hvordan generere  wsdl fra EchoService.java:
+
+Gå til der du har innstallert jboss as.
+
+C:\apps\jboss7\bin>javac -d . -verbose ..\..\moap-parent\moap-services\src\main\java\no\mrfrodo\soapservices\EchoService.java
+C:\apps\jboss7\bin>wsprovide --classpath=. -w no.mrfrodo.soapservices.EchoService

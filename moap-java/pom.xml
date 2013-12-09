@@ -28,6 +28,9 @@
 
 
     <build>
+        <finalName>
+            moap-java
+        </finalName>
 
     </build>
 

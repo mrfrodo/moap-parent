@@ -19,7 +19,7 @@ public class FixtureMemberService implements MemberService {
     }
 
     @Override
-    public Member getMember(final Long id) throws Exception {
+    public Member findById(final Long id) throws Exception {
         Member mockedMember = new Member();
         mockedMember.setId(1l);
         mockedMember.setName("frodo");

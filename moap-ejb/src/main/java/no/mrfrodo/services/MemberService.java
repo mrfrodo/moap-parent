@@ -6,5 +6,5 @@ public interface MemberService {
 
     public void saveNewMember(Member member) throws Exception;
 
-    public Member getMember(Long id) throws Exception;
+    public Member findById(Long id) throws Exception;
 }

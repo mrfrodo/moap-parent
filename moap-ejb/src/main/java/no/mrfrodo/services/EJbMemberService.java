@@ -29,7 +29,7 @@ public class EJbMemberService implements MemberService {
     }
 
     @Override
-    public Member getMember(final Long id) throws Exception {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    public Member findById(final Long id) throws Exception {
+        return null;
     }
 }
