@@ -1,4 +1,4 @@
-package no.mrfrodo.soapservices;
+package no.mrfrodo.soapservices.echo;
 
 @javax.jws.WebService
 public class EchoService {

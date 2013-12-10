@@ -1,5 +1,5 @@
 
-package no.mrfrodo.soapservices.generated;
+package no.mrfrodo.soapservices.echo.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
