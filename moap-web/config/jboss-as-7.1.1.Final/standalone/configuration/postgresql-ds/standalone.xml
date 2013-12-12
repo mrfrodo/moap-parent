@@ -106,7 +106,7 @@
                 <datasource jndi-name="java:jboss/postgresDS" pool-name="postgresDS" enabled="true" jta="false"
                             use-java-context="true" use-ccm="false">
                     <connection-url>
-                        jdbc:postgresql://192.z.y.x:5432/yourdatabase
+                        jdbc:postgresql://localhost:5432/MYWEBAPP
                     </connection-url>
                     <driver-class>
                         org.postgresql.Driver
