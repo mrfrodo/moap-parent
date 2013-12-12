@@ -12,7 +12,7 @@ import javax.persistence.PersistenceContext;
 import java.util.logging.Logger;
 
 @Stateless
-@Alternative
+//@Alternative
 public class EJbMemberService implements MemberService {
 
 

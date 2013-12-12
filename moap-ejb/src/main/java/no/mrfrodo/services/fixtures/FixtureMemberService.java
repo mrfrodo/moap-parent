@@ -4,7 +4,9 @@ package no.mrfrodo.services.fixtures;
 import no.mrfrodo.model.Member;
 import no.mrfrodo.services.MemberService;
 
-//@Alternative
+import javax.enterprise.inject.Alternative;
+
+@Alternative
 public class FixtureMemberService implements MemberService {
 
     public void saveNewMember(Member member) throws Exception {
